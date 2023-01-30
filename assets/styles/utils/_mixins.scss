@@ -1,0 +1,69 @@
+@use "./variables" as *;
+//flex containers
+@mixin flexContainer($direction) {
+  display: flex;
+  align-items: center;
+  flex-direction: $direction;
+  overflow-x: hidden;
+}
+
+/*
+fonts
+*/
+@mixin heroFont($color, $size, $weight) {
+  color: $color;
+  font-family: "RobotoSlab-VariableFont", Georgia, serif;
+  font-size: $size;
+  font-weight: $weight;
+  text-transform: uppercase;
+}
+
+@mixin primaryFont($color, $size, $weight) {
+  color: $color;
+  font-family: "RobotoFlex-VariableFont", Tahoma, sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  text-align: left;
+}
+
+/*
+buttons
+*/
+@mixin primaryButton($color, $size, $weight) {
+  @include primaryFont($color, $size, $weight);
+  padding: 0.5em 1.5em;
+  background-color: $accent-clr;
+  border-radius: 5rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.5em 1.5em;
+    transform: translateX(-410px);
+    transition: all ease-in-out 1.5s;
+  }
+  &:hover,
+  &:focus {
+    animation: shadowPulse linear 3s infinite 0s forwards;
+    &::before {
+      width: 100%;
+      height: 100%;
+      animation: btnSlideRight linear 0.5s 0s forwards;
+    }
+  }
+}
+
+@mixin primaryLink($color, $size, $weight) {
+  @include primaryFont($color, $size, $weight);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@mixin subHeading($color, $size, $weight) {
+  @include heroFont($color, $size, $weight);
+}
