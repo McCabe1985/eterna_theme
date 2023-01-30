@@ -1,7 +1,7 @@
 @use "../utils/" as *;
 
 .nav-container {
-  background-color: black;
-  width: 100%;
+  @include flexContainer(row);
   height: 15vh;
+  width: 100%;
 }
