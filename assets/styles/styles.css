@@ -477,4 +477,51 @@ body {
   font-size: 1.2rem;
   font-weight: 700;
   text-transform: uppercase;
+}
+.section-one .section-one-cards-wrapper .section-one-card .section-one-text {
+  color: black;
+  font-family: "RobotoFlex-VariableFont", Tahoma, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+.section-two-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  color: white;
+}
+.section-two-container .section-two-left-wrapper {
+  padding: 1rem;
+  width: 20rem;
+}
+.section-two-container .section-two-left-wrapper .section-two-heading {
+  color: white;
+  font-family: "RobotoSlab-VariableFont", Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 2rem auto;
+}
+.section-two-container .section-two-left-wrapper .section-two-text {
+  color: white;
+  font-family: "RobotoFlex-VariableFont", Tahoma, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  margin: 1rem auto;
+}
+.section-two-container .section-two-right-wrapper {
+  width: 20rem;
+  height: 20rem;
+  margin: 2rem;
+}
+.section-two-container .section-two-right-wrapper .section-two-image {
+  height: 100%;
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */

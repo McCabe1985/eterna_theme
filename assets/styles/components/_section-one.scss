@@ -33,6 +33,9 @@
         margin: 2rem 0;
         @include subHeading(black, 1.2rem, 700);
       }
+      .section-one-text {
+        @include primaryFont(black, 1rem, 400);
+      }
     }
   }
 }
