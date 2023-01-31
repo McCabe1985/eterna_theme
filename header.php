@@ -15,12 +15,11 @@
             <img src="<?php echo get_theme_file_uri("/assets/images/svg/placeholder_white.svg"); ?>" height="38.7" width="38.7" alt="logo" class="nav-logo">
         </a>
 
-        <div class="nav-links-wrapper">
-            <a href="/" class="nav-link">LINK</a>
-            <a href="/" class="nav-link">LINK</a>
-            <a href="/" class="nav-link">LINK</a>
-            <a href="/" class="nav-link">LINK</a>
-        </div>
+        <?php
+        wp_nav_menu(array(
+            "theme_location" => "desktopNavMenu"
+        ));
+        ?>
 
         <button class="hamburger-button nav-menu-closed">
 

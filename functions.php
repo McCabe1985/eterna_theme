@@ -12,6 +12,7 @@ add_action('wp_enqueue_scripts', 'eterna_files');
 function eterna_features()
 {
     register_nav_menu('mobileNavMenu', 'Mobile Nav Menu');
+    register_nav_menu('desktopNavMenu', 'Desktop Nav Menu');
 }
 
 add_action("after_setup_theme", 'eterna_features');
