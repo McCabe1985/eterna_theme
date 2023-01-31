@@ -211,6 +211,11 @@ Parallax Background
   width: 3rem;
   margin-right: 1rem;
 }
+@media (min-width: 45rem) {
+  .nav-container .hamburger-button {
+    display: none;
+  }
+}
 
 .nav-menu-closed {
   background-image: url("../images/svg/hamburger.svg");
@@ -235,6 +240,12 @@ Parallax Background
           animation: hamburger-slideLeft 0.5s linear;
   width: 100%;
 }
+@media (min-width: 30rem) {
+  .menu-mobile-nav-menu-container {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+}
 .menu-mobile-nav-menu-container ul {
   width: 100%;
   padding-left: 1rem;
@@ -242,6 +253,11 @@ Parallax Background
 .menu-mobile-nav-menu-container ul li {
   margin: 1rem 0;
   width: 100%;
+}
+@media (min-width: 30rem) {
+  .menu-mobile-nav-menu-container ul li {
+    margin: 1.5rem 0;
+  }
 }
 .menu-mobile-nav-menu-container ul li a {
   width: 100%;
