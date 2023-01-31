@@ -524,4 +524,81 @@ body {
 .section-two-container .section-two-right-wrapper .section-two-image {
   height: 100%;
   width: 100%;
+}
+
+.section-three-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  color: black;
+  background-color: white;
+}
+.section-three-container .section-three-right-wrapper {
+  padding: 1rem;
+  width: 20rem;
+}
+.section-three-container .section-three-right-wrapper .section-three-heading {
+  color: black;
+  font-family: "RobotoSlab-VariableFont", Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 2rem auto;
+}
+.section-three-container .section-three-right-wrapper .section-three-text {
+  color: black;
+  font-family: "RobotoFlex-VariableFont", Tahoma, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  margin: 1rem auto;
+}
+.section-three-container .section-three-left-wrapper {
+  width: 20rem;
+  height: 20rem;
+  margin: 2rem;
+}
+.section-three-container .section-three-left-wrapper .section-three-image {
+  height: 100%;
+  width: 100%;
+}
+
+.section-four-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section-four-container .section-four-heading {
+  color: white;
+  font-family: "RobotoSlab-VariableFont", Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 2rem auto;
+}
+.section-four-container .section-four-text-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  color: white;
+  font-family: "RobotoFlex-VariableFont", Tahoma, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+}
+.section-four-container .section-four-text-wrapper .section-four-text {
+  margin: 1.5rem auto;
+  width: 20rem;
 }/*# sourceMappingURL=styles.css.map */
