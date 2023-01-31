@@ -1,0 +1,8 @@
+@use "../utils/" as *;
+
+.hero-container {
+  @include flexContainer(column);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
