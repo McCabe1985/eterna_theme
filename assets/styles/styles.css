@@ -164,6 +164,10 @@ Parallax Background
     transform: translateX(0rem);
   }
 }
+body {
+  background-color: black;
+}
+
 .footer-container {
   background-color: black;
   width: 100%;
@@ -257,8 +261,8 @@ Parallax Background
   font-size: 2rem;
   text-align: left;
   transition: all ease-in;
-  -webkit-animation: hamburger-slideLeft 0.5s linear;
-          animation: hamburger-slideLeft 0.5s linear;
+  -webkit-animation: hamburger-slideLeft 0.3s linear;
+          animation: hamburger-slideLeft 0.3s linear;
   width: 100%;
 }
 @media (min-width: 30rem) {
@@ -296,9 +300,124 @@ Parallax Background
 .hero-container {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   overflow-x: hidden;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   position: relative;
+  width: 100%;
+  height: 80vh;
+}
+.hero-container .hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/herobg.webp");
+}
+.hero-container .hero-left-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  justify-content: space-around;
+  height: 90%;
+}
+@media (min-width: 60rem) {
+  .hero-container .hero-left-section {
+    width: 45%;
+  }
+}
+.hero-container .hero-left-section .hero-text-wrapper {
+  padding: 1rem;
+}
+.hero-container .hero-left-section .hero-text-wrapper .hero-heading {
+  color: black;
+  font-family: "RobotoSlab-VariableFont", Georgia, serif;
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 30rem) {
+  .hero-container .hero-left-section .hero-text-wrapper .hero-heading {
+    font-size: 5rem;
+  }
+}
+.hero-container .hero-left-section .hero-text-wrapper .hero-sub-text {
+  color: black;
+  font-family: "RobotoFlex-VariableFont", Tahoma, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: left;
+}
+.hero-container .hero-left-section .call-to-action-wrapper {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  overflow-x: hidden;
+  justify-content: flex-start;
+  width: 100%;
+}
+.hero-container .hero-left-section .call-to-action-wrapper .call-to-action {
+  color: white;
+  font-family: "RobotoFlex-VariableFont", Tahoma, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-align: left;
+  padding: 0.5em 1em;
+  background-color: #3d7578;
+  border-radius: 1rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin: 2rem auto 2rem 1rem;
+}
+.hero-container .hero-left-section .call-to-action-wrapper .call-to-action::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(89, 174, 226, 0.5019607843);
+  padding: 0.5em 1.5em;
+  transform: translateX(-410px);
+  transition: all ease-in-out 1.5s;
+}
+.hero-container .hero-left-section .call-to-action-wrapper .call-to-action:hover, .hero-container .hero-left-section .call-to-action-wrapper .call-to-action:focus {
+  -webkit-animation: shadowPulse linear 3s infinite 0s forwards;
+          animation: shadowPulse linear 3s infinite 0s forwards;
+}
+.hero-container .hero-left-section .call-to-action-wrapper .call-to-action:hover::before, .hero-container .hero-left-section .call-to-action-wrapper .call-to-action:focus::before {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: btnSlideRight linear 0.5s 0s forwards;
+          animation: btnSlideRight linear 0.5s 0s forwards;
+}
+.hero-container .hero-left-section .call-to-action-wrapper .call-to-action:hover, .hero-container .hero-left-section .call-to-action-wrapper .call-to-action:focus {
+  color: black;
+}
+@media (min-width: 45rem) {
+  .hero-container .hero-left-section .call-to-action-wrapper .call-to-action {
+    font-size: 2rem;
+  }
+}
+.hero-container .hero-img-wrapper {
+  display: none;
+}
+@media (min-width: 60rem) {
+  .hero-container .hero-img-wrapper {
+    display: block;
+    width: 30%;
+  }
+}
+.hero-container .hero-img-wrapper .hero-img {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=styles.css.map */
