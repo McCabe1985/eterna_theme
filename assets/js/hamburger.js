@@ -1,4 +1,5 @@
 const hamburgerBtn = document.querySelector(".hamburger-button");
+const hamburgerIcon = document.querySelector(".hamburger-icon");
 const navMenu = document.querySelector(".mobile-nav-menu");
 
 let hamburgerMenuClosed = true;

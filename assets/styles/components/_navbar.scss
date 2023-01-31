@@ -29,13 +29,19 @@
   }
 
   .hamburger-button {
-    height: 90%;
+    height: 3rem;
+    width: 3rem;
     margin-right: 1rem;
-    .hamburger-icon {
-      height: 100%;
-      width: auto;
-    }
   }
+}
+.nav-menu-closed {
+  background-image: url("../images/svg/hamburger.svg");
+  background-size: 3rem;
+}
+
+.nav-menu-open {
+  background-image: url("../images/svg/cross.svg");
+  background-size: 3rem;
 }
 
 .menu-mobile-nav-menu-container {

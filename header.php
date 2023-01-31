@@ -22,8 +22,8 @@
             <a href="/" class="nav-link">LINK</a>
         </div>
 
-        <button class="hamburger-button">
-            <img src="<?php echo get_theme_file_uri("/assets/images/svg/hamburger.svg"); ?>" height="14" width="14" alt="hamburger" class="hamburger-icon">
+        <button class="hamburger-button nav-menu-closed">
+
         </button>
 
     </nav>
