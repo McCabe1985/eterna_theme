@@ -166,6 +166,7 @@ Parallax Background
 }
 body {
   background-color: black;
+  line-height: 1.5;
 }
 
 .footer-container {
@@ -423,4 +424,56 @@ body {
 .hero-container .hero-img-wrapper .hero-img {
   width: 100%;
   height: auto;
+}
+
+.section-one {
+  background-color: white;
+  width: 100%;
+  min-height: 10rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: space-around;
+}
+.section-one .section-one-heading {
+  color: black;
+  font-family: "RobotoSlab-VariableFont", Georgia, serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+.section-one .section-one-cards-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  overflow-x: hidden;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.section-one .section-one-cards-wrapper .section-one-card {
+  width: 20rem;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  align-items: flex-start;
+}
+.section-one .section-one-cards-wrapper .section-one-card .section-one-card-img {
+  height: 8rem;
+  width: 8rem;
+  margin: 0 auto;
+}
+.section-one .section-one-cards-wrapper .section-one-card .section-one-card-heading {
+  margin: 2rem 0;
+  color: black;
+  font-family: "RobotoSlab-VariableFont", Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }/*# sourceMappingURL=styles.css.map */
