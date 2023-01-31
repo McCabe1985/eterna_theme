@@ -215,25 +215,38 @@ Parallax Background
   width: auto;
 }
 
-.hamburger-menu {
+.menu-mobile-nav-menu-container {
+  display: none;
   background-color: black;
+  width: 100%;
+  min-height: 0.01rem;
+  color: white;
+  font-size: 2rem;
+  text-align: left;
+  transition: all ease-in;
+  -webkit-animation: hamburger-slideLeft 0.5s linear;
+          animation: hamburger-slideLeft 0.5s linear;
+  width: 100%;
+}
+.menu-mobile-nav-menu-container ul {
+  width: 100%;
+  padding-left: 1rem;
+}
+.menu-mobile-nav-menu-container ul li {
+  margin: 1rem 0;
+  width: 100%;
+}
+.menu-mobile-nav-menu-container ul li a {
+  width: 100%;
+}
+
+.toggle-nav-box {
   display: flex;
   align-items: center;
   flex-direction: column;
   overflow-x: hidden;
-  justify-content: space-evenly;
   align-items: center;
-  width: 100%;
-  -webkit-animation: hamburger-slideLeft 0.5s linear 1s;
-          animation: hamburger-slideLeft 0.5s linear 1s;
-}
-.hamburger-menu .hamburger-link {
-  color: white;
-  font-size: 2rem;
-  margin: 1rem 0;
-  transition: all ease-in;
-  -webkit-animation: hamburger-slideLeft 0.8s linear 1s;
-          animation: hamburger-slideLeft 0.8s linear 1s;
+  justify-content: space-evenly;
 }
 
 .hero-container {

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php $navMenuOpen = false; ?>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,9 +27,9 @@
         </button>
 
     </nav>
-    <nav class="hamburger-menu">
-        <a href="/" class="hamburger-link">LINK</a>
-        <a href="/" class="hamburger-link">LINK</a>
-        <a href="/" class="hamburger-link">LINK</a>
-        <a href="/" class="hamburger-link">LINK</a>
-    </nav>
+
+    <?php
+    wp_nav_menu(array(
+        "theme_location" => "mobileNavMenu"
+    ));
+    ?>
